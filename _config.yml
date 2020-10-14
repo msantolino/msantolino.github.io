@@ -1,7 +1,7 @@
 title:            About me
 description:      Welcome to my site.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              //misantolino.github.io
+url:              //msantolino.github.io
 #http://localhost:4000
 #https://misantolino.github.io
 disqus_shortname: misantolino
