@@ -3,8 +3,8 @@ description:      Welcome to my site.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              //msantolino.github.io
 #http://localhost:4000
-#https://misantolino.github.io
-disqus_shortname: misantolino
+#https://msantolino.github.io
+disqus_shortname: msantolino
 
 # Owner/author information
 owner:
