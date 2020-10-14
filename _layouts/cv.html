@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+<style>
+  .bottom-three {
+     margin-bottom: 1.5cm;
+   }
+  .bottom-small {
+     margin-bottom: 1cm;
+   }
+</style>
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/business.png" alt="Work Experience" width="70" height="70"></p>
+    <p align="left">&#8226 <strong>SH associate professor</strong> at <a href="https://www.ub.edu/web/portal/ca/" target="_blank">University of Barcelona</a>.</p>
+    <p align="left">&#8226 <strong>Member of the research group</strong> of <a href="http://www.ub.edu/riskcenter/" target="_blank">Riskcenter</a>.</p>
+    <p align="left">&#8226 Member of the <a href="https://www.ub.edu/school-economics/" target="_blank"> UB School of Economics</a>.</p>
+    <p align="left">&#8226 Course instructor at the <a href="https://www.uoc.edu/" target="_blank"> Universitat Oberta de Catalunya</a>.</p>
+    <p align="left" class="bottom-three">&#8226 I collaborate with the <a href="https://www.ub.edu/catedres/ca/catedres/catedra-ub-zurich" target="_blank">UBZurich Funded Chair</a>.</p>
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/study2.png" alt="Education" width="70" height="70"></p>
+    <p align="left">&#8226 <strong>PhD</strong> in Business studies at UB, supervised by <a href="http://www.ub.edu/riskcenter/ayuso/" target="_blank">Prof. Mercedes Ayuso</a>.</p>
+    <p align="left">&#8226 <strong>Economics</strong> Degree and an <strong>Actuarial and Finance</strong><br>degree at the <a href="http://www.ub.edu/" target="_blank">UB</a>.</p>
+    <p align="left" class="bottom-three">&#8226 Master's degree of <strong>Actuarial and Financial Engineering</strong> at the <a href="https://www.kuleuven.be/kuleuven/" target="_blank">KU Leuven</a> (Belgium).</p>
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/award.png" alt="Languages" width="70" height="70"></p>
+    <p align="left">&#8226 <strong>I Prize to Talent in the insurance market 2015</strong> awarded by INESE to the best study in the insurance
+    industry in Spain, Portugal and Latin America.</p>
+    <p align="left">&#8226 <strong> Premi Ferrán Armengol i Tubau 2008</strong> to the best insurance research study, Societat Catalana d'Economia.</p>
+    <p align="left" class="bottom-three">&#8226 <strong> Premi extraordinari de doctorat 2007</strong>, prize awarded by the University of Barcelona to the best thesis
+        in Business studies.</p>
+
+    {{ content }}
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>
+</html>
