@@ -1,0 +1,69 @@
+title:            About me
+description:      Welcome to my site.
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              //misantolino.github.io
+#http://localhost:4000
+#https://misantolino.github.io
+disqus_shortname: misantolino
+
+# Owner/author information
+owner:
+  name:           Miguel Santolino
+  avatar:         miguel.png
+  bio:            Never lose curiosity and perseverance.
+  email:          msantolino@ub.edu
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  linkedin: miguel-santolino-570a3446
+  google_scholar: EbOrWWkAAAAJ&hl=ca
+  google_plus:
+  github: msantolino
+  orcid: 0000-0002-0286-3673
+
+
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-179607771
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Curriculum
+    url: /cv/
+  - title: Publications
+    url: /publications/
+  - title: Teaching
+    url: /teaching/
+  - title: Blog
+    url: /blog/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Madrid
+future:      true
+#pygments:    true
+highlighter: rouge
+markdown:    kramdown
+kramdown:
+  extensions: ["strikethrough"]
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+syntax_highlighter_opts:
+  line_numbers:
+  line_numbers_start: 1
+  tab_width: 4
+  bold_every: 10
+  css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
