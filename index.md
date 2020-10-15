@@ -7,7 +7,7 @@ image:
   feature: trees.jpg
 ---
 
-I am a SH Associate Professor of Actuarial Statistics in the Department of Econometrics, Statistics and Applied Economics at the <a href="https://www.ub.edu/portal/web/dp-economestap/econometria-estadistica/" target="_blank">Universitat de Barcelona</a>
+I am SH Associate Professor of Actuarial Statistics in the Department of Econometrics, Statistics and Applied Economics at the <a href="https://www.ub.edu/portal/web/dp-economestap/econometria-estadistica/" target="_blank">Universitat de Barcelona</a>
 and member of the research group <a href="http://www.ub.edu/riskcenter/santolino/" target="_blank">Riskcenter</a>.
 
 <br />
